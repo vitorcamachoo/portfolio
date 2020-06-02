@@ -1,0 +1,5 @@
+{
+  "eslint.nodePath": ".vscode/pnpify",
+  "prettier.prettierPath": ".vscode/pnpify/prettier/index.js",
+  "deno.enable": false
+}

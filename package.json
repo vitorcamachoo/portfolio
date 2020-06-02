@@ -1,0 +1,21 @@
+{
+  "name": "webpack5-workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "applications/*"
+  ],
+  "scripts": {
+    "build": "yarn lerna exec --parallel --stream -- yarn build --mode=production",
+    "start": "yarn lerna exec --parallel --stream -- yarn start",
+    "serve": "yarn lerna exec --parallel --stream -- yarn serve"
+  },
+  "dependencies": {
+    "@yarnpkg/pnpify": "^2.0.0-rc.22",
+    "eslint": "^7.0.0",
+    "lerna": "^3.22.0",
+    "prettier": "^2.0.5"
+  }
+}
